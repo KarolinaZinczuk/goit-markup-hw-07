@@ -1,3 +1,18 @@
 .logo {
-     width: 20px;
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &__header {
+    color: $logoColorHeader;
+    padding-right: 70px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  &--accent {
+    color: $logoColorAccent;
+  }
 }
