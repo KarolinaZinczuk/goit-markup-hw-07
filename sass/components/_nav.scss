@@ -9,16 +9,25 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--brand-color);
+    color: $brandColor;
     position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 46px;
+    transition-property: color;
+    @extend %transition;
   }
 
   &__link:focus,
   &__link:hover {
     color: $hoverColor;
   }
+}
+
+.activepage::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 4px solid #2196f3;
+  border-radius: 2px;
+  width: 100%;
+  bottom: -33px;
 }

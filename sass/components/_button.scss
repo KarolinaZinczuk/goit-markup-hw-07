@@ -1,0 +1,52 @@
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background: $buttonBgColor;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 41px 10px 42px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  transition-property: background-color, color;
+  @extend %transition;
+
+  &-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+
+  &--filters {
+    font-weight: 500;
+    line-height: 1.63;
+    background-color: #f5f4fa;
+    color: #212121;
+    box-sizing: border-box;
+    padding: 6px 22px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  &--filters:hover {
+    background-color: $hoverColor;
+    color: #fff;
+    box-shadow: 0px 2px 2px 0px #0000001f;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001a;
+  }
+
+  &--modal {
+    width: 200px;
+    position: absolute;
+    left: 124px;
+  }
+
+  &--newsletter {
+    position: absolute;
+    padding-right: 76px;
+  }
+}
