@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
@@ -184,7 +184,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.body {
+body {
   background-color: #fff;
 }
 
@@ -360,8 +360,9 @@ address {
 }
 .modal__icon {
   position: absolute;
-  top: 34px;
-  left: 15px;
+  top: 51%;
+  left: 23px;
+  transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
 }
@@ -458,7 +459,7 @@ address {
 .newsletter {
   margin-left: 50px;
 }
-.newsletterr__tittle {
+.newsletter__tittle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
