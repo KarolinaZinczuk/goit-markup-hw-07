@@ -41,8 +41,8 @@
 
   &--modal {
     width: 200px;
-    position: absolute;
-    left: 124px;
+    display: block;
+    margin: 20px auto 0 auto;
   }
 
   &--newsletter {

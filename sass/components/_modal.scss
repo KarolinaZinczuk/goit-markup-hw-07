@@ -39,8 +39,8 @@
   }
 
   &__form {
-    margin-left: 40px;
     position: relative;
+    padding: 40px;
   }
 
   &__tittle {
@@ -48,14 +48,13 @@
     font-size: 20px;
     line-height: 1.15;
     color: #212121;
-    margin-top: 40px;
     margin-bottom: 12px;
     text-align: center;
   }
 
   &__input {
     position: relative;
-    width: 448px;
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
     font-weight: 400;
@@ -71,80 +70,82 @@
 
   &__label {
     position: relative;
-  }
-
-  &__icon {
-    position: absolute;
-    top: 51%;
-    left: 23px;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-  }
-
-  &__input:focus {
-    outline: 1px solid $hoverColor;
-  }
-
-  &__label:focus-within {
-    fill: $hoverColor;
-  }
-
-  &__textarea {
-    width: 448px;
-    height: 120px;
-    margin-bottom: 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.67;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    color: #75757580;
-    letter-spacing: 0.01em;
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin-top: 4px;
-    padding: 12px 16px;
+
+    &__icon {
+      position: absolute;
+      top: 51%;
+      left: 23px;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+    }
+
+    &__input:focus {
+      outline: 1px solid $hoverColor;
+    }
+
+    &__label:focus-within {
+      fill: $hoverColor;
+    }
+
+    &__textarea {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.67;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      color: #75757580;
+      letter-spacing: 0.01em;
+      display: flex;
+      align-items: flex-start;
+      align-content: flex-start;
+      margin-top: 4px;
+      padding: 12px 16px;
+    }
+
+    &__textarea:focus-within {
+      outline: 1px solid $hoverColor;
+    }
+
+    &__checkbox {
+      margin-bottom: 30px;
+      cursor: pointer;
+      width: 16px;
+      height: 15px;
+      appearance: none;
+      background-image: url(../images/square.svg);
+    }
+
+    &__checkbox:checked {
+      appearance: none;
+      background-color: #2196f3;
+      background-image: url(../images/check.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &__checkbox-text {
+      display: inline-block;
+      margin: 0;
+    }
+
+    &__checkbox-link {
+      color: #2196f3e5;
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 
-  &__textarea:focus-within {
-    outline: 1px solid $hoverColor;
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
-
-  &__checkbox {
-    margin-bottom: 30px;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 15px;
-    width: 16px;
-    height: 15px;
-    appearance: none;
-    background-image: url(../images/square.svg);
-  }
-
-  &__checkbox:checked {
-    appearance: none;
-    background-color: #2196f3;
-    background-image: url(../images/check.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &__checkbox-text {
-    margin-left: 39px;
-    margin-bottom: 30px;
-  }
-  &__checkbox-link {
-    color: #2196f3e5;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
