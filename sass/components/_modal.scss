@@ -18,6 +18,7 @@
   min-height: 581px;
   background-color: #fff;
 
+
   .close-btn {
     position: absolute;
     top: 8px;
@@ -73,6 +74,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.67;
+  }
 
     &__icon {
       position: absolute;
@@ -121,8 +123,8 @@
       appearance: none;
       background-image: url(../images/square.svg);
     }
-
-    &__checkbox:checked {
+    
+    &:checked {
       appearance: none;
       background-color: #2196f3;
       background-image: url(../images/check.svg);
@@ -148,4 +150,4 @@
     visibility: hidden;
     pointer-events: none;
   }
-}
+
