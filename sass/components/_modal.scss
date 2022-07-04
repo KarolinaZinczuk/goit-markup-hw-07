@@ -18,7 +18,6 @@
   min-height: 581px;
   background-color: #fff;
 
-
   .close-btn {
     position: absolute;
     top: 8px;
@@ -76,54 +75,52 @@
     line-height: 1.67;
   }
 
-    &__icon {
-      position: absolute;
-      top: 51%;
-      left: 23px;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      height: 20px;
-    }
+  &__icon {
+    position: absolute;
+    top: 51%;
+    left: 23px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+  }
 
-    &__input:focus {
-      outline: 1px solid $hoverColor;
-    }
+  &__input:focus {
+    outline: 1px solid $hoverColor;
+  }
 
-    &__label:focus-within {
-      fill: $hoverColor;
-    }
+  &__label:focus-within {
+    fill: $hoverColor;
+  }
 
-    &__textarea {
-      width: 100%;
-      height: 120px;
-      margin-bottom: 20px;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.67;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      color: #75757580;
-      letter-spacing: 0.01em;
-      display: flex;
-      align-items: flex-start;
-      align-content: flex-start;
-      margin-top: 4px;
-      padding: 12px 16px;
-    }
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: #75757580;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 4px;
+    padding: 12px 16px;
+  }
 
-    &__textarea:focus-within {
-      outline: 1px solid $hoverColor;
-    }
+  &__textarea:focus-within {
+    outline: 1px solid $hoverColor;
+  }
 
-    &__checkbox {
-      margin-bottom: 30px;
-      cursor: pointer;
-      width: 16px;
-      height: 15px;
-      appearance: none;
-      background-image: url(../images/square.svg);
-    }
-    
+  &__checkbox {
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    appearance: none;
+    background-image: url(../images/square.svg);
     &:checked {
       appearance: none;
       background-color: #2196f3;
@@ -132,22 +129,22 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
-
-    &__checkbox-text {
-      display: inline-block;
-      margin: 0;
-    }
-
-    &__checkbox-link {
-      color: #2196f3e5;
-      cursor: pointer;
-      text-decoration: underline;
-    }
   }
 
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  &__checkbox-text {
+    display: inline-block;
+    margin: 0;
   }
 
+  &__checkbox-link {
+    color: #2196f3e5;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
