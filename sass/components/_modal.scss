@@ -28,6 +28,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    z-index: 1;
   }
 
   &__icon-close {
@@ -114,8 +115,7 @@
     outline: 1px solid $hoverColor;
   }
 
-  &__checkbox {
-    margin-bottom: 30px;
+  &__checkbox {    
     cursor: pointer;
     width: 16px;
     height: 15px;

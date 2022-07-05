@@ -42,7 +42,7 @@ body {
 .button--modal {
   width: 200px;
   display: block;
-  margin: 20px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 .button--newsletter {
   position: absolute;
@@ -319,6 +319,7 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1;
 }
 .modal__icon-close {
   position: absolute;
@@ -395,7 +396,6 @@ address {
   outline: 1px solid #2196f3;
 }
 .modal__checkbox {
-  margin-bottom: 30px;
   cursor: pointer;
   width: 16px;
   height: 15px;
